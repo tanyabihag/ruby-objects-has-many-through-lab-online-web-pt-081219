@@ -9,4 +9,4 @@ def initialize(name)
 end  
 
 def appointments
-  
+  Appointments.all.select {|item| item.  
