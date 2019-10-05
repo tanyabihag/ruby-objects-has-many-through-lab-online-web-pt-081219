@@ -8,8 +8,12 @@ def initialize(name)
   @@all << self
 end  
 
+def self.all
+  @@all
+end
+
 def appointments
-  Appointments.all.select {|item| item.doctor}
+  Appointment.all.select {|item| item.doctor == self}
 end
 
 
