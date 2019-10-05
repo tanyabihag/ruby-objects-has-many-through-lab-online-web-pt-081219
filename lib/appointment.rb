@@ -15,4 +15,12 @@ def self.all
 end
 
 def patient
+  @patient
+end 
+
+def doctor
+  @doctor
+end
+
+end
   
