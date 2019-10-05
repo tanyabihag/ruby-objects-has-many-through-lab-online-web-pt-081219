@@ -9,4 +9,5 @@ def initialize(name)
 end  
 
 def appointments
-  Appointments.all.select {|item| item.  
+  Appointments.all.select {|item| item.doctor}
+end
