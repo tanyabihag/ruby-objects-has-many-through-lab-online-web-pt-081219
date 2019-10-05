@@ -11,3 +11,6 @@ end
 def appointments
   Appointments.all.select {|item| item.doctor}
 end
+
+
+end
