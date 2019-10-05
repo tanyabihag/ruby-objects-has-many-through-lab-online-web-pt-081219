@@ -17,7 +17,14 @@ def appointments
 end
 
 def new_appointment(date, patient)
-  Appointment.new(date, patient, self)
+  Appointment.new(date, patient)
 end
+
+def patients
+  patient_list = []
+  appointments.each {|item| patient_list << item.patient}
+  patient_list
+end
+
 
 end
