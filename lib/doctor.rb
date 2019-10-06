@@ -22,7 +22,7 @@ end
 
 def patients
   patient_list = []
-  self.appointments.each {|item| patient_list << item.patient}
+  self.appointments.collect {|item| patient_list << item.patient}
   patient_list
 end
 
